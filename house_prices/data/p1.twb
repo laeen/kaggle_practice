@@ -1,0 +1,1665 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20204.20.1106.0321                               -->
+<workbook original-version='18.1' source-build='2020.4.0 (20204.20.1106.0321)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='train.csv (多个连接)' inline='true' name='federated.1bm9m8k0ifa8sw186bb6l1hsisnk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Predictions' name='textscan.1y1xq971f2pqub19by62a1swj1f7'>
+            <connection class='textscan' directory='/Users/liaotansi/Documents/mywork/kaggle_practice/house_prices/data' filename='Predictions.csv' password='' port='0' server='' />
+          </named-connection>
+          <named-connection caption='test' name='textscan.08wm3xu1yzofwf0zpa1o20uhjf2o'>
+            <connection class='textscan' directory='/Users/liaotansi/Documents/mywork/kaggle_practice/house_prices/data' filename='test.csv' password='' port='0' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.08wm3xu1yzofwf0zpa1o20uhjf2o' name='train.csv' table='[train#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+            <column datatype='integer' name='Id' ordinal='0' />
+            <column datatype='integer' name='MSSubClass' ordinal='1' />
+            <column datatype='string' name='MSZoning' ordinal='2' />
+            <column datatype='string' name='LotFrontage' ordinal='3' />
+            <column datatype='integer' name='LotArea' ordinal='4' />
+            <column datatype='string' name='Street' ordinal='5' />
+            <column datatype='string' name='Alley' ordinal='6' />
+            <column datatype='string' name='LotShape' ordinal='7' />
+            <column datatype='string' name='LandContour' ordinal='8' />
+            <column datatype='string' name='Utilities' ordinal='9' />
+            <column datatype='string' name='LotConfig' ordinal='10' />
+            <column datatype='string' name='LandSlope' ordinal='11' />
+            <column datatype='string' name='Neighborhood' ordinal='12' />
+            <column datatype='string' name='Condition1' ordinal='13' />
+            <column datatype='string' name='Condition2' ordinal='14' />
+            <column datatype='string' name='BldgType' ordinal='15' />
+            <column datatype='string' name='HouseStyle' ordinal='16' />
+            <column datatype='integer' name='OverallQual' ordinal='17' />
+            <column datatype='integer' name='OverallCond' ordinal='18' />
+            <column datatype='integer' name='YearBuilt' ordinal='19' />
+            <column datatype='integer' name='YearRemodAdd' ordinal='20' />
+            <column datatype='string' name='RoofStyle' ordinal='21' />
+            <column datatype='string' name='RoofMatl' ordinal='22' />
+            <column datatype='string' name='Exterior1st' ordinal='23' />
+            <column datatype='string' name='Exterior2nd' ordinal='24' />
+            <column datatype='string' name='MasVnrType' ordinal='25' />
+            <column datatype='integer' name='MasVnrArea' ordinal='26' />
+            <column datatype='string' name='ExterQual' ordinal='27' />
+            <column datatype='string' name='ExterCond' ordinal='28' />
+            <column datatype='string' name='Foundation' ordinal='29' />
+            <column datatype='string' name='BsmtQual' ordinal='30' />
+            <column datatype='string' name='BsmtCond' ordinal='31' />
+            <column datatype='string' name='BsmtExposure' ordinal='32' />
+            <column datatype='string' name='BsmtFinType1' ordinal='33' />
+            <column datatype='integer' name='BsmtFinSF1' ordinal='34' />
+            <column datatype='string' name='BsmtFinType2' ordinal='35' />
+            <column datatype='integer' name='BsmtFinSF2' ordinal='36' />
+            <column datatype='integer' name='BsmtUnfSF' ordinal='37' />
+            <column datatype='integer' name='TotalBsmtSF' ordinal='38' />
+            <column datatype='string' name='Heating' ordinal='39' />
+            <column datatype='string' name='HeatingQC' ordinal='40' />
+            <column datatype='string' name='CentralAir' ordinal='41' />
+            <column datatype='string' name='Electrical' ordinal='42' />
+            <column datatype='integer' name='1stFlrSF' ordinal='43' />
+            <column datatype='integer' name='2ndFlrSF' ordinal='44' />
+            <column datatype='integer' name='LowQualFinSF' ordinal='45' />
+            <column datatype='integer' name='GrLivArea' ordinal='46' />
+            <column datatype='integer' name='BsmtFullBath' ordinal='47' />
+            <column datatype='integer' name='BsmtHalfBath' ordinal='48' />
+            <column datatype='integer' name='FullBath' ordinal='49' />
+            <column datatype='integer' name='HalfBath' ordinal='50' />
+            <column datatype='integer' name='BedroomAbvGr' ordinal='51' />
+            <column datatype='integer' name='KitchenAbvGr' ordinal='52' />
+            <column datatype='string' name='KitchenQual' ordinal='53' />
+            <column datatype='integer' name='TotRmsAbvGrd' ordinal='54' />
+            <column datatype='string' name='Functional' ordinal='55' />
+            <column datatype='integer' name='Fireplaces' ordinal='56' />
+            <column datatype='string' name='FireplaceQu' ordinal='57' />
+            <column datatype='string' name='GarageType' ordinal='58' />
+            <column datatype='string' name='GarageYrBlt' ordinal='59' />
+            <column datatype='string' name='GarageFinish' ordinal='60' />
+            <column datatype='integer' name='GarageCars' ordinal='61' />
+            <column datatype='integer' name='GarageArea' ordinal='62' />
+            <column datatype='string' name='GarageQual' ordinal='63' />
+            <column datatype='string' name='GarageCond' ordinal='64' />
+            <column datatype='string' name='PavedDrive' ordinal='65' />
+            <column datatype='integer' name='WoodDeckSF' ordinal='66' />
+            <column datatype='integer' name='OpenPorchSF' ordinal='67' />
+            <column datatype='integer' name='EnclosedPorch' ordinal='68' />
+            <column datatype='integer' name='3SsnPorch' ordinal='69' />
+            <column datatype='integer' name='ScreenPorch' ordinal='70' />
+            <column datatype='integer' name='PoolArea' ordinal='71' />
+            <column datatype='string' name='PoolQC' ordinal='72' />
+            <column datatype='string' name='Fence' ordinal='73' />
+            <column datatype='string' name='MiscFeature' ordinal='74' />
+            <column datatype='integer' name='MiscVal' ordinal='75' />
+            <column datatype='integer' name='MoSold' ordinal='76' />
+            <column datatype='integer' name='YrSold' ordinal='77' />
+            <column datatype='string' name='SaleType' ordinal='78' />
+            <column datatype='string' name='SaleCondition' ordinal='79' />
+            <column datatype='integer' name='SalePrice' ordinal='80' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.08wm3xu1yzofwf0zpa1o20uhjf2o' name='train.csv' table='[train#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+            <column datatype='integer' name='Id' ordinal='0' />
+            <column datatype='integer' name='MSSubClass' ordinal='1' />
+            <column datatype='string' name='MSZoning' ordinal='2' />
+            <column datatype='string' name='LotFrontage' ordinal='3' />
+            <column datatype='integer' name='LotArea' ordinal='4' />
+            <column datatype='string' name='Street' ordinal='5' />
+            <column datatype='string' name='Alley' ordinal='6' />
+            <column datatype='string' name='LotShape' ordinal='7' />
+            <column datatype='string' name='LandContour' ordinal='8' />
+            <column datatype='string' name='Utilities' ordinal='9' />
+            <column datatype='string' name='LotConfig' ordinal='10' />
+            <column datatype='string' name='LandSlope' ordinal='11' />
+            <column datatype='string' name='Neighborhood' ordinal='12' />
+            <column datatype='string' name='Condition1' ordinal='13' />
+            <column datatype='string' name='Condition2' ordinal='14' />
+            <column datatype='string' name='BldgType' ordinal='15' />
+            <column datatype='string' name='HouseStyle' ordinal='16' />
+            <column datatype='integer' name='OverallQual' ordinal='17' />
+            <column datatype='integer' name='OverallCond' ordinal='18' />
+            <column datatype='integer' name='YearBuilt' ordinal='19' />
+            <column datatype='integer' name='YearRemodAdd' ordinal='20' />
+            <column datatype='string' name='RoofStyle' ordinal='21' />
+            <column datatype='string' name='RoofMatl' ordinal='22' />
+            <column datatype='string' name='Exterior1st' ordinal='23' />
+            <column datatype='string' name='Exterior2nd' ordinal='24' />
+            <column datatype='string' name='MasVnrType' ordinal='25' />
+            <column datatype='integer' name='MasVnrArea' ordinal='26' />
+            <column datatype='string' name='ExterQual' ordinal='27' />
+            <column datatype='string' name='ExterCond' ordinal='28' />
+            <column datatype='string' name='Foundation' ordinal='29' />
+            <column datatype='string' name='BsmtQual' ordinal='30' />
+            <column datatype='string' name='BsmtCond' ordinal='31' />
+            <column datatype='string' name='BsmtExposure' ordinal='32' />
+            <column datatype='string' name='BsmtFinType1' ordinal='33' />
+            <column datatype='integer' name='BsmtFinSF1' ordinal='34' />
+            <column datatype='string' name='BsmtFinType2' ordinal='35' />
+            <column datatype='integer' name='BsmtFinSF2' ordinal='36' />
+            <column datatype='integer' name='BsmtUnfSF' ordinal='37' />
+            <column datatype='integer' name='TotalBsmtSF' ordinal='38' />
+            <column datatype='string' name='Heating' ordinal='39' />
+            <column datatype='string' name='HeatingQC' ordinal='40' />
+            <column datatype='string' name='CentralAir' ordinal='41' />
+            <column datatype='string' name='Electrical' ordinal='42' />
+            <column datatype='integer' name='1stFlrSF' ordinal='43' />
+            <column datatype='integer' name='2ndFlrSF' ordinal='44' />
+            <column datatype='integer' name='LowQualFinSF' ordinal='45' />
+            <column datatype='integer' name='GrLivArea' ordinal='46' />
+            <column datatype='integer' name='BsmtFullBath' ordinal='47' />
+            <column datatype='integer' name='BsmtHalfBath' ordinal='48' />
+            <column datatype='integer' name='FullBath' ordinal='49' />
+            <column datatype='integer' name='HalfBath' ordinal='50' />
+            <column datatype='integer' name='BedroomAbvGr' ordinal='51' />
+            <column datatype='integer' name='KitchenAbvGr' ordinal='52' />
+            <column datatype='string' name='KitchenQual' ordinal='53' />
+            <column datatype='integer' name='TotRmsAbvGrd' ordinal='54' />
+            <column datatype='string' name='Functional' ordinal='55' />
+            <column datatype='integer' name='Fireplaces' ordinal='56' />
+            <column datatype='string' name='FireplaceQu' ordinal='57' />
+            <column datatype='string' name='GarageType' ordinal='58' />
+            <column datatype='string' name='GarageYrBlt' ordinal='59' />
+            <column datatype='string' name='GarageFinish' ordinal='60' />
+            <column datatype='integer' name='GarageCars' ordinal='61' />
+            <column datatype='integer' name='GarageArea' ordinal='62' />
+            <column datatype='string' name='GarageQual' ordinal='63' />
+            <column datatype='string' name='GarageCond' ordinal='64' />
+            <column datatype='string' name='PavedDrive' ordinal='65' />
+            <column datatype='integer' name='WoodDeckSF' ordinal='66' />
+            <column datatype='integer' name='OpenPorchSF' ordinal='67' />
+            <column datatype='integer' name='EnclosedPorch' ordinal='68' />
+            <column datatype='integer' name='3SsnPorch' ordinal='69' />
+            <column datatype='integer' name='ScreenPorch' ordinal='70' />
+            <column datatype='integer' name='PoolArea' ordinal='71' />
+            <column datatype='string' name='PoolQC' ordinal='72' />
+            <column datatype='string' name='Fence' ordinal='73' />
+            <column datatype='string' name='MiscFeature' ordinal='74' />
+            <column datatype='integer' name='MiscVal' ordinal='75' />
+            <column datatype='integer' name='MoSold' ordinal='76' />
+            <column datatype='integer' name='YrSold' ordinal='77' />
+            <column datatype='string' name='SaleType' ordinal='78' />
+            <column datatype='string' name='SaleCondition' ordinal='79' />
+            <column datatype='integer' name='SalePrice' ordinal='80' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;￥&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_CN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Id]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MSSubClass</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MSSubClass]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>MSSubClass</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MSZoning</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MSZoning]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>MSZoning</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LotFrontage</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LotFrontage]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>LotFrontage</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LotArea</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LotArea]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>LotArea</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Street</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Street]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Street</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Alley</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Alley]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Alley</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LotShape</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LotShape]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>LotShape</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LandContour</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LandContour]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>LandContour</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Utilities</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Utilities]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Utilities</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LotConfig</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LotConfig]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>LotConfig</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LandSlope</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LandSlope]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>LandSlope</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Neighborhood</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Neighborhood]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Neighborhood</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Condition1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Condition1]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Condition1</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Condition2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Condition2]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Condition2</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BldgType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BldgType]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>BldgType</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HouseStyle</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HouseStyle]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>HouseStyle</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OverallQual</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OverallQual]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>OverallQual</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OverallCond</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OverallCond]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>OverallCond</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YearBuilt</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YearBuilt]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>YearBuilt</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YearRemodAdd</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YearRemodAdd]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>YearRemodAdd</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RoofStyle</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RoofStyle]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>RoofStyle</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RoofMatl</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RoofMatl]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>RoofMatl</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exterior1st</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Exterior1st]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Exterior1st</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exterior2nd</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Exterior2nd]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Exterior2nd</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MasVnrType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MasVnrType]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>MasVnrType</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MasVnrArea</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MasVnrArea]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>MasVnrArea</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ExterQual</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ExterQual]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>ExterQual</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ExterCond</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ExterCond]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>ExterCond</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Foundation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Foundation]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Foundation</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BsmtQual</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BsmtQual]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>BsmtQual</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BsmtCond</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BsmtCond]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>BsmtCond</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BsmtExposure</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BsmtExposure]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>BsmtExposure</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BsmtFinType1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BsmtFinType1]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>BsmtFinType1</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BsmtFinSF1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BsmtFinSF1]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>BsmtFinSF1</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BsmtFinType2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BsmtFinType2]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>BsmtFinType2</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BsmtFinSF2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BsmtFinSF2]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>BsmtFinSF2</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BsmtUnfSF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BsmtUnfSF]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>BsmtUnfSF</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalBsmtSF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalBsmtSF]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>TotalBsmtSF</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Heating</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Heating]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Heating</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HeatingQC</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HeatingQC]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>HeatingQC</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CentralAir</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CentralAir]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>CentralAir</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Electrical</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Electrical]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Electrical</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1stFlrSF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1stFlrSF]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>1stFlrSF</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2ndFlrSF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2ndFlrSF]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>2ndFlrSF</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LowQualFinSF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LowQualFinSF]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>LowQualFinSF</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GrLivArea</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GrLivArea]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>GrLivArea</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BsmtFullBath</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BsmtFullBath]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>BsmtFullBath</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BsmtHalfBath</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BsmtHalfBath]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>BsmtHalfBath</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FullBath</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FullBath]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>FullBath</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HalfBath</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HalfBath]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>HalfBath</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BedroomAbvGr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BedroomAbvGr]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>BedroomAbvGr</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KitchenAbvGr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[KitchenAbvGr]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>KitchenAbvGr</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KitchenQual</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[KitchenQual]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>KitchenQual</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotRmsAbvGrd</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotRmsAbvGrd]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>TotRmsAbvGrd</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Functional</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Functional]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Functional</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fireplaces</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Fireplaces]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Fireplaces</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FireplaceQu</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FireplaceQu]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>FireplaceQu</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GarageType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GarageType]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>GarageType</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GarageYrBlt</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GarageYrBlt]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>GarageYrBlt</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GarageFinish</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GarageFinish]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>GarageFinish</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GarageCars</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GarageCars]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>GarageCars</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GarageArea</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GarageArea]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>GarageArea</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GarageQual</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GarageQual]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>GarageQual</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GarageCond</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GarageCond]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>GarageCond</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PavedDrive</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PavedDrive]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>PavedDrive</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WoodDeckSF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WoodDeckSF]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>WoodDeckSF</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OpenPorchSF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OpenPorchSF]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>OpenPorchSF</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EnclosedPorch</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EnclosedPorch]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>EnclosedPorch</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>3SsnPorch</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[3SsnPorch]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>3SsnPorch</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ScreenPorch</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ScreenPorch]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>ScreenPorch</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PoolArea</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PoolArea]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>PoolArea</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PoolQC</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PoolQC]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>PoolQC</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fence</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Fence]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Fence</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MiscFeature</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MiscFeature]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>MiscFeature</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MiscVal</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MiscVal]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>MiscVal</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MoSold</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MoSold]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>MoSold</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YrSold</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YrSold]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>YrSold</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SaleType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SaleType]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>SaleType</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SaleCondition</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SaleCondition]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>SaleCondition</remote-alias>
+            <ordinal>79</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SalePrice</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SalePrice]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>SalePrice</remote-alias>
+            <ordinal>80</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[train.csv_29ECFD572BB347EDA6E7DB61004A0650]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Bedroom Abv Gr' datatype='integer' name='[BedroomAbvGr]' role='measure' type='quantitative' />
+      <column caption='Bldg Type' datatype='string' name='[BldgType]' role='dimension' type='nominal' />
+      <column caption='Bsmt Cond' datatype='string' name='[BsmtCond]' role='dimension' type='nominal' />
+      <column caption='Bsmt Exposure' datatype='string' name='[BsmtExposure]' role='dimension' type='nominal' />
+      <column caption='Bsmt Full Bath' datatype='integer' name='[BsmtFullBath]' role='measure' type='quantitative' />
+      <column caption='Bsmt Half Bath' datatype='integer' name='[BsmtHalfBath]' role='measure' type='quantitative' />
+      <column caption='Bsmt Qual' datatype='string' name='[BsmtQual]' role='dimension' type='nominal' />
+      <column caption='Bsmt Unf SF' datatype='integer' name='[BsmtUnfSF]' role='measure' type='quantitative' />
+      <column caption='Central Air' datatype='string' name='[CentralAir]' role='dimension' type='nominal' />
+      <column caption='Enclosed Porch' datatype='integer' name='[EnclosedPorch]' role='measure' type='quantitative' />
+      <column caption='Exter Cond' datatype='string' name='[ExterCond]' role='dimension' type='nominal' />
+      <column caption='Exter Qual' datatype='string' name='[ExterQual]' role='dimension' type='nominal' />
+      <column caption='Fireplace Qu' datatype='string' name='[FireplaceQu]' role='dimension' type='nominal' />
+      <column caption='Full Bath' datatype='integer' name='[FullBath]' role='measure' type='quantitative' />
+      <column caption='Garage Area' datatype='integer' name='[GarageArea]' role='measure' type='quantitative' />
+      <column caption='Garage Cars' datatype='integer' name='[GarageCars]' role='measure' type='quantitative' />
+      <column caption='Garage Cond' datatype='string' name='[GarageCond]' role='dimension' type='nominal' />
+      <column caption='Garage Finish' datatype='string' name='[GarageFinish]' role='dimension' type='nominal' />
+      <column caption='Garage Qual' datatype='string' name='[GarageQual]' role='dimension' type='nominal' />
+      <column caption='Garage Type' datatype='string' name='[GarageType]' role='dimension' type='nominal' />
+      <column caption='Garage Yr Blt' datatype='string' name='[GarageYrBlt]' role='dimension' type='nominal' />
+      <column caption='Gr Liv Area' datatype='integer' name='[GrLivArea]' role='measure' type='quantitative' />
+      <column caption='Half Bath' datatype='integer' name='[HalfBath]' role='measure' type='quantitative' />
+      <column caption='Heating QC' datatype='string' name='[HeatingQC]' role='dimension' type='nominal' />
+      <column caption='House Style' datatype='string' name='[HouseStyle]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Id]' role='dimension' type='ordinal' />
+      <column caption='Kitchen Abv Gr' datatype='integer' name='[KitchenAbvGr]' role='measure' type='quantitative' />
+      <column caption='Kitchen Qual' datatype='string' name='[KitchenQual]' role='dimension' type='nominal' />
+      <column caption='Land Contour' datatype='string' name='[LandContour]' role='dimension' type='nominal' />
+      <column caption='Land Slope' datatype='string' name='[LandSlope]' role='dimension' type='nominal' />
+      <column caption='Lot Area' datatype='integer' name='[LotArea]' role='measure' type='quantitative' />
+      <column caption='Lot Config' datatype='string' name='[LotConfig]' role='dimension' type='nominal' />
+      <column caption='Lot Frontage' datatype='string' name='[LotFrontage]' role='dimension' type='nominal' />
+      <column caption='Lot Shape' datatype='string' name='[LotShape]' role='dimension' type='nominal' />
+      <column caption='Low Qual Fin SF' datatype='integer' name='[LowQualFinSF]' role='measure' type='quantitative' />
+      <column caption='MS Sub Class' datatype='integer' name='[MSSubClass]' role='measure' type='quantitative' />
+      <column caption='MS Zoning' datatype='string' name='[MSZoning]' role='dimension' type='nominal' />
+      <column caption='Mas Vnr Area' datatype='integer' name='[MasVnrArea]' role='measure' type='quantitative' />
+      <column caption='Mas Vnr Type' datatype='string' name='[MasVnrType]' role='dimension' type='nominal' />
+      <column caption='Misc Feature' datatype='string' name='[MiscFeature]' role='dimension' type='nominal' />
+      <column caption='Misc Val' datatype='integer' name='[MiscVal]' role='measure' type='quantitative' />
+      <column caption='Mo Sold' datatype='integer' name='[MoSold]' role='measure' type='quantitative' />
+      <column caption='Open Porch SF' datatype='integer' name='[OpenPorchSF]' role='measure' type='quantitative' />
+      <column caption='Overall Cond' datatype='integer' name='[OverallCond]' role='measure' type='quantitative' />
+      <column caption='Overall Qual' datatype='integer' name='[OverallQual]' role='measure' type='quantitative' />
+      <column caption='Paved Drive' datatype='string' name='[PavedDrive]' role='dimension' type='nominal' />
+      <column caption='Pool Area' datatype='integer' name='[PoolArea]' role='measure' type='quantitative' />
+      <column caption='Pool QC' datatype='string' name='[PoolQC]' role='dimension' type='nominal' />
+      <column caption='Roof Matl' datatype='string' name='[RoofMatl]' role='dimension' type='nominal' />
+      <column caption='Roof Style' datatype='string' name='[RoofStyle]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Sale Price (数据桶)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='4' formula='[SalePrice]' peg='0' size='24455' />
+      </column>
+      <column caption='Sale Condition' datatype='string' name='[SaleCondition]' role='dimension' type='nominal' />
+      <column caption='Sale Price' datatype='integer' name='[SalePrice]' role='measure' type='quantitative' />
+      <column caption='Sale Type' datatype='string' name='[SaleType]' role='dimension' type='nominal' />
+      <column caption='Screen Porch' datatype='integer' name='[ScreenPorch]' role='measure' type='quantitative' />
+      <column caption='Tot Rms Abv Grd' datatype='integer' name='[TotRmsAbvGrd]' role='measure' type='quantitative' />
+      <column caption='Total Bsmt SF' datatype='integer' name='[TotalBsmtSF]' role='measure' type='quantitative' />
+      <column caption='Wood Deck SF' datatype='integer' name='[WoodDeckSF]' role='measure' type='quantitative' />
+      <column caption='Year Built' datatype='integer' name='[YearBuilt]' role='dimension' type='quantitative' />
+      <column caption='Year Remod Add' datatype='integer' name='[YearRemodAdd]' role='dimension' type='quantitative' />
+      <column caption='Yr Sold' datatype='integer' name='[YrSold]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='train.csv' datatype='table' name='[__tableau_internal_object_id__].[train.csv_29ECFD572BB347EDA6E7DB61004A0650]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;中国&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='train.csv' id='train.csv_29ECFD572BB347EDA6E7DB61004A0650'>
+            <properties context=''>
+              <relation connection='textscan.08wm3xu1yzofwf0zpa1o20uhjf2o' name='train.csv' table='[train#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+                  <column datatype='integer' name='Id' ordinal='0' />
+                  <column datatype='integer' name='MSSubClass' ordinal='1' />
+                  <column datatype='string' name='MSZoning' ordinal='2' />
+                  <column datatype='string' name='LotFrontage' ordinal='3' />
+                  <column datatype='integer' name='LotArea' ordinal='4' />
+                  <column datatype='string' name='Street' ordinal='5' />
+                  <column datatype='string' name='Alley' ordinal='6' />
+                  <column datatype='string' name='LotShape' ordinal='7' />
+                  <column datatype='string' name='LandContour' ordinal='8' />
+                  <column datatype='string' name='Utilities' ordinal='9' />
+                  <column datatype='string' name='LotConfig' ordinal='10' />
+                  <column datatype='string' name='LandSlope' ordinal='11' />
+                  <column datatype='string' name='Neighborhood' ordinal='12' />
+                  <column datatype='string' name='Condition1' ordinal='13' />
+                  <column datatype='string' name='Condition2' ordinal='14' />
+                  <column datatype='string' name='BldgType' ordinal='15' />
+                  <column datatype='string' name='HouseStyle' ordinal='16' />
+                  <column datatype='integer' name='OverallQual' ordinal='17' />
+                  <column datatype='integer' name='OverallCond' ordinal='18' />
+                  <column datatype='integer' name='YearBuilt' ordinal='19' />
+                  <column datatype='integer' name='YearRemodAdd' ordinal='20' />
+                  <column datatype='string' name='RoofStyle' ordinal='21' />
+                  <column datatype='string' name='RoofMatl' ordinal='22' />
+                  <column datatype='string' name='Exterior1st' ordinal='23' />
+                  <column datatype='string' name='Exterior2nd' ordinal='24' />
+                  <column datatype='string' name='MasVnrType' ordinal='25' />
+                  <column datatype='integer' name='MasVnrArea' ordinal='26' />
+                  <column datatype='string' name='ExterQual' ordinal='27' />
+                  <column datatype='string' name='ExterCond' ordinal='28' />
+                  <column datatype='string' name='Foundation' ordinal='29' />
+                  <column datatype='string' name='BsmtQual' ordinal='30' />
+                  <column datatype='string' name='BsmtCond' ordinal='31' />
+                  <column datatype='string' name='BsmtExposure' ordinal='32' />
+                  <column datatype='string' name='BsmtFinType1' ordinal='33' />
+                  <column datatype='integer' name='BsmtFinSF1' ordinal='34' />
+                  <column datatype='string' name='BsmtFinType2' ordinal='35' />
+                  <column datatype='integer' name='BsmtFinSF2' ordinal='36' />
+                  <column datatype='integer' name='BsmtUnfSF' ordinal='37' />
+                  <column datatype='integer' name='TotalBsmtSF' ordinal='38' />
+                  <column datatype='string' name='Heating' ordinal='39' />
+                  <column datatype='string' name='HeatingQC' ordinal='40' />
+                  <column datatype='string' name='CentralAir' ordinal='41' />
+                  <column datatype='string' name='Electrical' ordinal='42' />
+                  <column datatype='integer' name='1stFlrSF' ordinal='43' />
+                  <column datatype='integer' name='2ndFlrSF' ordinal='44' />
+                  <column datatype='integer' name='LowQualFinSF' ordinal='45' />
+                  <column datatype='integer' name='GrLivArea' ordinal='46' />
+                  <column datatype='integer' name='BsmtFullBath' ordinal='47' />
+                  <column datatype='integer' name='BsmtHalfBath' ordinal='48' />
+                  <column datatype='integer' name='FullBath' ordinal='49' />
+                  <column datatype='integer' name='HalfBath' ordinal='50' />
+                  <column datatype='integer' name='BedroomAbvGr' ordinal='51' />
+                  <column datatype='integer' name='KitchenAbvGr' ordinal='52' />
+                  <column datatype='string' name='KitchenQual' ordinal='53' />
+                  <column datatype='integer' name='TotRmsAbvGrd' ordinal='54' />
+                  <column datatype='string' name='Functional' ordinal='55' />
+                  <column datatype='integer' name='Fireplaces' ordinal='56' />
+                  <column datatype='string' name='FireplaceQu' ordinal='57' />
+                  <column datatype='string' name='GarageType' ordinal='58' />
+                  <column datatype='string' name='GarageYrBlt' ordinal='59' />
+                  <column datatype='string' name='GarageFinish' ordinal='60' />
+                  <column datatype='integer' name='GarageCars' ordinal='61' />
+                  <column datatype='integer' name='GarageArea' ordinal='62' />
+                  <column datatype='string' name='GarageQual' ordinal='63' />
+                  <column datatype='string' name='GarageCond' ordinal='64' />
+                  <column datatype='string' name='PavedDrive' ordinal='65' />
+                  <column datatype='integer' name='WoodDeckSF' ordinal='66' />
+                  <column datatype='integer' name='OpenPorchSF' ordinal='67' />
+                  <column datatype='integer' name='EnclosedPorch' ordinal='68' />
+                  <column datatype='integer' name='3SsnPorch' ordinal='69' />
+                  <column datatype='integer' name='ScreenPorch' ordinal='70' />
+                  <column datatype='integer' name='PoolArea' ordinal='71' />
+                  <column datatype='string' name='PoolQC' ordinal='72' />
+                  <column datatype='string' name='Fence' ordinal='73' />
+                  <column datatype='string' name='MiscFeature' ordinal='74' />
+                  <column datatype='integer' name='MiscVal' ordinal='75' />
+                  <column datatype='integer' name='MoSold' ordinal='76' />
+                  <column datatype='integer' name='YrSold' ordinal='77' />
+                  <column datatype='string' name='SaleType' ordinal='78' />
+                  <column datatype='string' name='SaleCondition' ordinal='79' />
+                  <column datatype='integer' name='SalePrice' ordinal='80' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='工作表 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train.csv (多个连接)' name='federated.1bm9m8k0ifa8sw186bb6l1hsisnk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bm9m8k0ifa8sw186bb6l1hsisnk'>
+            <column datatype='integer' name='[Sale Price (数据桶)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='4' formula='[SalePrice]' peg='0' size='24455' />
+            </column>
+            <column caption='Sale Price' datatype='integer' name='[SalePrice]' role='measure' type='quantitative' />
+            <column-instance column='[SalePrice]' derivation='Count' name='[cnt:SalePrice:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sale Price (数据桶)]' derivation='None' name='[none:Sale Price (数据桶):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.1bm9m8k0ifa8sw186bb6l1hsisnk].[cnt:SalePrice:qk]</rows>
+        <cols>[federated.1bm9m8k0ifa8sw186bb6l1hsisnk].[none:Sale Price (数据桶):qk]</cols>
+        <show-full-range>
+          <column>[federated.1bm9m8k0ifa8sw186bb6l1hsisnk].[Sale Price (数据桶)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{88734D68-C8AB-4B56-9C06-1BB62518462E}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='工作表 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E999A664-7907-4EE1-846F-D69F884D9712}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='工作表 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
